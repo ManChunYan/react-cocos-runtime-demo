@@ -38,10 +38,19 @@ Notes:
 ### `react-app/.env`
 
 ```env
-VITE_COCOS_URL=/cocos-game/web-desktop/
+VITE_COCOS_URL=http://localhost:5173/cocos-game/web-desktop/
 ```
 
 `VITE_COCOS_URL` must point to the Cocos web build folder that React loads into the iframe.
+
+- For local development and preview on port `5173`, use the full URL above.
+- If you serve React and Cocos from the same origin in production, use a relative path instead:
+
+```env
+VITE_COCOS_URL=/cocos-game/web-desktop/
+```
+
+> `react-app/package.json` currently uses `vite --port 5173` for both `dev` and `preview`, so the local URL should also use port `5173`.
 
 ## Install
 
@@ -94,11 +103,13 @@ pnpm dev
 
 ### `react-app`
 
-- `pnpm dev` - start the Vite dev server.
+- `pnpm dev` - start the Vite dev server on port `5173`.
 - `pnpm build` - type-check and build React.
 - `pnpm test` - run Vitest tests.
 - `pnpm lint` - run ESLint.
-- `pnpm preview` - preview the production build.
+- `pnpm preview` - preview the production build on port `5173`.
+
+> If you change `VITE_COCOS_URL` to use a different local host port, update both `dev` and `preview` scripts in `react-app/package.json` so they stay consistent.
 
 ## Event Bridge
 
