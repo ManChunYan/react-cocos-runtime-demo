@@ -5,7 +5,7 @@ FeedPets is a small Cocos Creator + React test project. React owns the web UI an
 ## Project Structure
 
 ```text
-FeedPets/
+react-cocos-runtime-demo/
   cocos-game/       Cocos Creator project
   react-app/        React + Vite app that embeds the Cocos build
   shared/protocol/  Shared TypeScript event contract
