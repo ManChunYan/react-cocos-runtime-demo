@@ -1,0 +1,4 @@
+packages:
+  - "shared/protocol"
+  - "react-app"
+  - "cocos-game"

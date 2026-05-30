@@ -1,0 +1,27 @@
+{
+  "name": "@feedpets/protocol",
+  "version": "1.0.0",
+  "description": "Shared protocol types and events for FeedPets clients.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  },
+  "packageManager": "pnpm@10.33.2"
+}

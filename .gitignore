@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Package manager artifacts
+/.npm/
+/.yarn/
+/.pnp.*
+/react-app/pnpm-lock.yaml
+/shared/protocol/pnpm-lock.yaml
+/cocos-game/pnpm-lock.yaml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Build outputs and caches
+dist/
+dist-ssr/
+coverage/
+.nyc_output/
+.vite/
+.vitest/
+*.tsbuildinfo
+
+# Cocos Creator generated files
+/cocos-game/library/
+/cocos-game/temp/
+/cocos-game/local/
+/cocos-game/build/
+/cocos-game/profiles/
+/cocos-game/native/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

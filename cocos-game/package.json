@@ -1,0 +1,13 @@
+{
+  "name": "cocos-game",
+  "uuid": "1433e811-527b-4408-9852-1e9a08aac753",
+  "dependencies": {
+    "@feedpets/protocol": "workspace:*"
+  },
+  "creator": {
+    "version": "3.8.8"
+  },
+  "scripts": {
+    "build": "node scripts/build-cocos.mjs"
+  }
+}
