@@ -9,7 +9,6 @@ react-cocos-runtime-demo/
   cocos-game/       Cocos Creator project
   react-app/        React + Vite app that embeds the Cocos build
   shared/protocol/  Shared TypeScript event contract
-  Texture/          Source texture assets
 ```
 
 ## Requirements
